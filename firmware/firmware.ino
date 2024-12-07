@@ -75,6 +75,9 @@ void loop() {
   duration = pulseIn(ECHO_PIN, HIGH);
   distancia = duration * 0.034 / 2;
 
+  Serial.print("Distancia registrada: ");
+  Serial.println(distancia);
+
   bool estaNaDistancia = distancia > 0 && distancia <= 20;
   bool haMovimento = digitalRead(PIN_PIR) == HIGH;
 
