@@ -1,4 +1,7 @@
+---
+
 # MIC014Aula4-VictorC-RyanK-IgorP_UFRR_2024-
+
 <br />  
 <p align="center">
   <a href="">
@@ -6,32 +9,33 @@
     <img src="https://github.com/VictorH456/MIC014Aula2-VictorC-RyanK-IgorP_UFRR_2024/blob/main/imagens/maloca.png" alt="" width="80" height="80">
     <img src="https://github.com/VictorH456/MIC014Aula2-VictorC-RyanK-IgorP_UFRR_2024/blob/main/imagens/dcc.png" alt="" width="80" height="80">
   </a>
-  <h1 align="center">Projeto de Botão de Pânico com ESP32, LED e Piezo (Buzzer)</h1>
+  <h1 align="center">Projeto de Dispenser para Higienização das mãos</h1>
   <p align="center">
     <img src="https://github.com/VictorH456/MIC014Aula2-VictorC-RyanK-IgorP_UFRR_2024-/blob/main/imagens/Kakapo_lavando.jpg">
     
 
-## 1. Botão de Pânico
+## 1. Dispenser de Higienização das Mãos
 
-O projeto a ser desenvolvido consiste na criação de um **sistema de botão de pânico** utilizando o microcontrolador **ESP32**. O sistema será composto por três componentes principais: um **LED**, um **piezo (buzzer)** e um **botão de pânico**.
+O projeto a ser desenvolvido consiste na criação de um **dispenser automático de higienização das mãos** utilizando o microcontrolador **ESP32**. O sistema será composto por três componentes principais: um **sensor ultrassônico**, um **motor de bomba** e uma **luz indicadora**.
 
-Quando o botão for pressionado, o ESP32 acionará o **LED** para sinalizar visualmente o alerta e o **buzzer** para emitir um som de alerta. Este sistema será útil em situações de emergência, oferecendo uma forma simples e eficiente de notificar pessoas sobre uma situação de risco.
+Quando o sensor ultrassônico detectar a presença das mãos, o **motor de bomba** será acionado para liberar o álcool gel ou sabonete, enquanto a **luz indicadora** sinaliza que o dispenser está funcionando. Este sistema será útil em ambientes hospitalares e outros locais públicos, garantindo um processo de higienização eficiente e sem contato.
 
-O desenvolvimento será realizado na plataforma **Arduino IDE**, utilizando a programação do ESP32 para controlar a interação entre o botão, o LED e o buzzer, criando uma resposta imediata quando o botão for ativado.
+O desenvolvimento será realizado na plataforma **Arduino IDE**, utilizando a programação do ESP32 para controlar a interação entre o sensor, a bomba e a luz indicadora, criando uma solução prática e segura para a higienização das mãos.
 
 ### 1.1 Objetivos:
-- Criar um sistema de alerta de emergência simples e eficiente.
-- Integrar o ESP32 com os componentes (LED, buzzer e botão de pânico).
-- Desenvolver a programação para acionar os dispositivos corretamente quando o botão for pressionado.
-- Explorar o uso do ESP32 em sistemas de alerta.
-## 2. Tutorial montagem:
-- **Botão**: Conecte o botão push button ao pino digital 21 do ESP32 e o outro
- terminal ao GND.
-- **LED**: Conecte o anodo do LED ao resistor ,que será ligado ao pino 23 do
- ESP 32, e o catodo ao GND.
-- **Resistor**: Conecte o um resistor o ao pino 23 e ao anodo do LED.
-- **Buzzer**: conecte o catodo no GND e o anodo no 22.
-- **Alimentação**: via cabo USB ou uma fonte externa compatível
-  </p>
+- Criar um dispenser automático de higienização das mãos eficiente e sem contato.
+- Integrar o ESP32 com os componentes (sensor ultrassônico, motor de bomba e luz indicadora).
+- Desenvolver a programação para acionar os dispositivos corretamente quando as mãos forem detectadas.
+- Explorar o uso do ESP32 em sistemas automáticos de higiene.
+
+## 2. Tutorial de Montagem:
+- **Sensor Ultrassônico**: Conecte o pino **Trig** ao pino digital 21 do ESP32 e o pino **Echo** ao pino digital 22. O VCC do sensor vai ao **5V** e o GND ao **GND**.
+- **Motor de Bomba**: Conecte o **VCC** do motor à alimentação e o **GND** ao GND do ESP32. O pino de controle do motor vai ao pino digital 23 do ESP32.
+- **Luz Indicadora (LED)**: Conecte o anodo do LED ao resistor, que será ligado ao pino 19 do ESP32, e o catodo ao GND.
+- **Alimentação**: A alimentação pode ser feita via cabo USB ou por uma fonte externa compatível.
+
 </p>
 </p>
+</p>
+
+---
